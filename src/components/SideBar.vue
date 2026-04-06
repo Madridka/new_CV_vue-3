@@ -29,6 +29,7 @@ const skills: string[] = [
   'VueX/Pinia Store',
   'REST API (Fetch, Axios)',
   'Vite',
+  'PrimeVue',
   'Tailwind CSS',
   'Sass',
   'Кросс-платформенная верстка',
@@ -45,7 +46,7 @@ const skills: string[] = [
 const languages: Languages[] = [
   {
     language: 'Русский',
-    level: 99,
+    level: 96,
   },
   {
     language: 'Английский',

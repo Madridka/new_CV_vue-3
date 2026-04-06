@@ -5,11 +5,11 @@ import HeaderComponent from '@/components/HeaderComponent.vue'
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col gap-2 bg-slate-200 text-white px-130 max-xl:flex-col">
+  <div class="min-h-screen flex flex-col gap-2 bg-slate-200 text-white xl:px-130 max-xl:px-20">
     <header class="bg-gradient-to-b from-indigo-800 via-indigo-900 to-slate-900 rounded-3xl mt-4">
       <HeaderComponent />
     </header>
-    <div class="flex mb-4">
+    <div class="flex mb-4 max-xl:flex-col max-xl:gap-2">
       <aside
         class="w-[30%] p-4 bg-gradient-to-b from-indigo-800 via-indigo-900 to-slate-900 rounded-3xl max-xl:w-full"
       >
