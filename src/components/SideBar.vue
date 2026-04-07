@@ -8,15 +8,18 @@ import ProgressBar from 'primevue/progressbar'
 const contacts: Contacts[] = [
   {
     icon: 'pi pi-envelope',
-    value: 'serbin_kirill1807@mail.ru',
+    value: '@mail.ru',
+    mail: 'serbin_kirill1807@mail.ru',
   },
   {
     icon: 'pi pi-telegram',
     value: '@madrid_ka',
+    link: 'https://t.me/madrid_ka',
   },
   {
     icon: 'pi pi-github',
-    value: 'https://github.com/Madridka',
+    value: '@Madridka',
+    link: 'https://github.com/Madridka',
   },
 ]
 
@@ -76,7 +79,14 @@ const languages: Languages[] = [
       <template #content>
         <div class="flex gap-2 items-center text-sm text-gray-400" v-for="contact in contacts">
           <i :class="contact.icon" />
-          <a :href="contact.value"> {{ contact.value }} </a>
+
+          <div v-if="contact.link">
+            <a :href="contact.link ? contact.link : ''"> {{ contact.value }} </a>
+          </div>
+
+          <div v-if="contact.mail">
+            <a href="mailto:serbin_kirill1807@mail.ru"> {{ contact.value }} </a>
+          </div>
         </div>
       </template>
     </Card>

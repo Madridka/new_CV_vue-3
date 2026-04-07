@@ -6,6 +6,8 @@ export interface Languages {
 export interface Contacts {
   icon: string
   value: string
+  link?: string
+  mail?: string
 }
 
 export interface Job {

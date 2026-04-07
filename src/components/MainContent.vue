@@ -80,12 +80,12 @@ const projects: string[] = [
         <Divider class="mt-0" />
         <div class="space-y-4">
           <div v-for="job in experience" :key="job.company">
-            <div class="flex justify-between">
+            <div class="flex justify-between pb-2">
               <h3 class="font-semibold">{{ job.role }} - {{ job.company }}</h3>
               <Tag :value="job.period" severity="secondary" />
             </div>
 
-            <ul class="text-sm mt-1 pr-30 pl-6" v-for="desc in job.description">
+            <ul class="text-sm mt-1 pr-30 pl-6 max-xl:pr-10" v-for="desc in job.description">
               <li class="list-disc">
                 {{ desc }}
               </li>
