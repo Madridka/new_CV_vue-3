@@ -1,0 +1,68 @@
+{
+  "name": "Сербин Кирилл",
+  "profession": "Frontend разработчик",
+
+  "contacts": "Контакты",
+
+  "languages": "Языки",
+  "russian": "Русский",
+  "english": "Английский",
+  "german": "Немецкий",
+
+  "stack": "Стек технологий",
+  "html5": "HTML5",
+  "css": "CSS",
+  "javaScript": "JavaScript",
+  "typeScript": "TypeScript",
+  "vue": "Vue 2/3",
+  "stateManagement": "VueX / Pinia",
+  "restApi": "REST API (Fetch, Axios)",
+  "vite": "Vite",
+  "primeVue": "PrimeVue",
+  "tailwind": "Tailwind CSS",
+  "sass": "Sass",
+  "crossPlatform": "Кросс-платформенная верстка",
+  "figma": "Верстка по макетам Figma",
+  "androidStudio": "Android Studio",
+  "goLang": "Go",
+  "git": "Git и GitFlow",
+  "docker": "Docker",
+  "codeReview": "Code Review",
+  "productTeam": "Работа в продуктовой команде",
+  "jira": "Jira / Confluence",
+
+  "aboutMe": "Обо мне",
+  "description": "Frontend-разработчик с опытом разработки и поддержки бизнес web-приложений. Есть опыт миграции с Vue 2 на Vue 3, работе с legacy-кодом и построении масштабируемой frontend-архитектуры (Composition API, Pinia).'",
+
+  "experience": "Опыт",
+  "snc": "СибНефтеКарт",
+  "roleSnc": "Инженер-программист",
+  "periodSnc": "06/26 - н.в.",
+  "sncDescription1": "Мигрировал приложение с Vue 2 на Vue 3 (Composition API), включая перенос и адаптацию бизнес-логики",
+  "sncDescription2": "Поддерживал и развивал web-приложения под автоматизацию АЗС и нефтебаз",
+  "sncDescription3": "Адаптировал web-приложение под мобильные устройства (responsive layout, оптимизация UX)",
+  "sncDescription4": "Участвовал в подготовке сборки приложения под Android",
+  "sncDescription5": "Интегрировал REST API (Axios), обеспечивая стабильное взаимодействие frontend с backend",
+  "sncDescription6": "Использовал PrimeVue для ускорения разработки и унификации UI",
+
+  "asapGazprom": "ASAP Education/Газпром трансгаз Томск",
+  "roleAsap": "Frontend разработчик",
+  "periodAsap": "02/25 - 06/25",
+  "asapDescription1": "Участвовал в разработке MVP web-приложения с нуля",
+  "asapDescription2": "Разрабатывал кастомные компоненты с использованием Vue 3 + Composition API",
+  "asapDescription3": "Интегрировал backend API",
+  "asapDescription4": "Работал в команде с использованием GitFlow, code review и Jira",
+
+  "education": "Образование",
+  "asapEducation": "ASAP Education",
+  "asapDegree": "Frontend разработчик",
+  "asapPeriod": "02/25 - 07/25",
+
+  "tpuEducation": "НИ Томский политехнический университет, Томск",
+  "tpuDegree": "Институт природных ресурсов, кафедра Химической технологии топлива и химической кибернетики",
+  "tpuPeriod": "08/12-07/16",
+
+  "mainProjects": "Ключевые проекты",
+  "firstProject": "Разработал систему планирования обучения сотрудников (MVP), позволившую автоматизировать процессы HR и сократить ручные операции",
+  "secondProject": "Мигрировал frontend-приложение с Vue 2 на Vue 3, улучшив поддерживаемость кода и упростив дальнейшее развитие продукта"
+}

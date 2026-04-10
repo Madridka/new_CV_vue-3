@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import type { Contacts, Languages } from '@/types/types'
+import { useI18n } from 'vue-i18n'
 
 import Card from 'primevue/card'
 import Tag from 'primevue/tag'
 import ProgressBar from 'primevue/progressbar'
+
+const { t } = useI18n()
 
 const contacts: Contacts[] = [
   {
@@ -24,39 +27,39 @@ const contacts: Contacts[] = [
 ]
 
 const skills: string[] = [
-  'HTML5',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'Vue 2/3',
-  'VueX/Pinia Store',
-  'REST API (Fetch, Axios)',
-  'Vite',
-  'PrimeVue',
-  'Tailwind CSS',
-  'Sass',
-  'Кросс-платформенная верстка',
-  'Верстка по макетам из Figma',
-  'Android Studio',
-  'GoLang',
-  'Git и GitFlow',
-  'Docker',
-  'Code Review',
-  'Работа в продуктовой команде',
-  'Jira/Confluence',
+  'html5',
+  'css',
+  'javaScript',
+  'typeScript',
+  'vue',
+  'stateManagement',
+  'restApi',
+  'vite',
+  'primeVue',
+  'tailwind',
+  'sass',
+  'crossPlatform',
+  'figma',
+  'androidStudio',
+  'goLang',
+  'git',
+  'docker',
+  'codeReview',
+  'productTeam',
+  'jira',
 ]
 
 const languages: Languages[] = [
   {
-    language: 'Русский',
+    language: 'russian',
     level: 96,
   },
   {
-    language: 'Английский',
+    language: 'english',
     level: 60,
   },
   {
-    language: 'Немецкий',
+    language: 'german',
     level: 30,
   },
 ]
@@ -74,7 +77,7 @@ const languages: Languages[] = [
       }"
     >
       <template #title>
-        <div class="text-white">Контакты</div>
+        <div class="text-white">{{ t('contacts') }}</div>
       </template>
       <template #content>
         <div class="flex gap-2 items-center text-sm text-gray-400" v-for="contact in contacts">
@@ -101,13 +104,13 @@ const languages: Languages[] = [
       }"
     >
       <template #title>
-        <div class="text-white">Языки</div>
+        <div class="text-white">{{ t('languages') }}</div>
       </template>
       <template #content>
         <div class="flex flex-col w-full">
           <div v-for="language in languages" :key="language.language">
             <div class="flex justify-between text-sm mb-1">
-              <span class="text-gray-200">{{ language.language }}</span>
+              <span class="text-gray-200">{{ t(language.language) }}</span>
             </div>
             <ProgressBar :value="language.level" />
           </div>
@@ -118,11 +121,11 @@ const languages: Languages[] = [
     <!-- СТЭК -->
     <Card class="bg-gray-800 border-none">
       <template #title>
-        <div class="text-white">Стек технологий</div>
+        <div class="text-white">{{ t('stack') }}</div>
       </template>
       <template #content>
         <div class="flex flex-wrap gap-2">
-          <Tag v-for="item in skills" :key="item" :value="item" severity="info" />
+          <Tag v-for="item in skills" :key="item" :value="t(item)" severity="info" />
         </div>
       </template>
     </Card>
