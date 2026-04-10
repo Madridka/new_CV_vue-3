@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import type { Contacts, Languages } from '@/types/types'
+import type { Contacts } from '@/types/types'
 import { useI18n } from 'vue-i18n'
 
 import Card from 'primevue/card'
 import Tag from 'primevue/tag'
-import ProgressBar from 'primevue/progressbar'
+
+import LanguagesApp from '@/components/LanguagesApp.vue'
 
 const { t } = useI18n()
 
@@ -48,21 +49,6 @@ const skills: string[] = [
   'productTeam',
   'jira',
 ]
-
-const languages: Languages[] = [
-  {
-    language: 'russian',
-    level: 96,
-  },
-  {
-    language: 'english',
-    level: 60,
-  },
-  {
-    language: 'german',
-    level: 30,
-  },
-]
 </script>
 
 <template>
@@ -95,28 +81,7 @@ const languages: Languages[] = [
     </Card>
 
     <!-- ЯЗЫКИ -->
-    <Card
-      class="bg-gray-800 border-none"
-      :pt="{
-        content: {
-          class: 'flex flex-row gap-6',
-        },
-      }"
-    >
-      <template #title>
-        <div class="text-white">{{ t('languages') }}</div>
-      </template>
-      <template #content>
-        <div class="flex flex-col w-full">
-          <div v-for="language in languages" :key="language.language">
-            <div class="flex justify-between text-sm mb-1">
-              <span class="text-gray-200">{{ t(language.language) }}</span>
-            </div>
-            <ProgressBar :value="language.level" />
-          </div>
-        </div>
-      </template>
-    </Card>
+    <LanguagesApp />
 
     <!-- СТЭК -->
     <Card class="bg-gray-800 border-none">
